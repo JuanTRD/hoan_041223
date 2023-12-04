@@ -53,7 +53,7 @@ public class App {
     public static void reverseArray(int[] arr){
         int first = 0;
         int last = arr.length -1;
-        while (first > last) {
+        while (first < last) {
             int temp = arr[first];
             arr[first] = arr[last];
             arr[last] = arr[first];
