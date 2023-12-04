@@ -145,10 +145,11 @@ public class App {
     public static void reverseString(String s){
         int index = 0;
         char[] arr = new char[s.length()];
-        for(int i=s.length()-1;i>=0;i++){
-            arr[index] = s.charAt(i);        
+        for(int i=s.length()-1;i>=0;i--){
+            arr[index] = s.charAt(i); 
+            index++;
         }
-        for(int i=0;i<=arr.length;i++){
+        for(int i=0;i<arr.length;i++){
             System.out.print(arr[i]);
         }
 
