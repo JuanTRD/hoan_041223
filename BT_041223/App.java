@@ -186,12 +186,12 @@ public class App {
             System.out.println("Wrong!");
         } else{
             increaseSort(arr);
-            System.out.println(arr[k+1]);
+            System.out.println(arr[arr.length - k]);
         }
     }
 
     public static void primeArray(int[] arr){
-        for(int i=0;i<=arr.length;i++){
+        for(int i=0;i<arr.length;i++){
             isPrime(arr[i]);
         }
     }
